@@ -5,8 +5,8 @@ import About from '../Components/About/About'
 import Project from '../Components/Projects/Project'
 import Contact from '../Components/Contact Area/contact'
 import Footer_sec from '../Components/Footer/footer'
-import Achievements from '../Components/Achievements/Achievements'
-import Certificate from '../Components/Certificates/certificate'
+// import Achievements from '../Components/Achievements/Achievements'
+// import Certificate from '../Components/Certificates/certificate'
 // import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //we have to import jsx file from components folder
