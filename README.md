@@ -1,5 +1,4 @@
-# My-Website-Portfolio
-# 💼 Personal Portfolio Website
+# My-Website-Portfolio 💼
 
 👋 Welcome to my **Personal Portfolio Website**
 <br>
@@ -47,3 +46,4 @@ Built with React.js ⚛️, this portfolio is a reflection of both my technical 
 ├── .gitignore
 ├── README.md
 └── package.json
+
