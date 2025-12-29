@@ -18,8 +18,6 @@ const App = () => {
       <Profile />
       <About />
       <Project />
-      <Achievements />
-      <Certificate />
       <Contact />
       <Footer_sec />
       {/* <BrowserRouter>
