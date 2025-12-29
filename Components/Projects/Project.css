@@ -1,0 +1,75 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin : 80px 170px;
+}
+
+.projects-title{
+    position: relative;
+}
+
+.projects-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.project-format {
+    text-decoration: none;
+    color:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap : 20px;
+    /* gap is for changing vertical spacing between different items of a container or div */
+    padding: 30px;
+    border-radius: 10px;
+    border : 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    margin-bottom: 80px;
+}
+
+.project-format h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.project-format h2{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg,rgb(195, 142, 81) 50%, rgb(0, 255, 234) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-format p{
+    color:beige;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 300px;
+}
+
+.project-readmore{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-format:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-image:linear-gradient(135deg, #cdb165, #4fd0e1);
+    transform: scale(1.05);
+    transition: 0.5s;
+}

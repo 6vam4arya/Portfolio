@@ -1,0 +1,84 @@
+.about {
+  padding: 6rem 8%;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #22d3ee, #a78bfa, #f472b6);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+
+/* Typewriter */
+.typewriter {
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.about-subtext {
+  margin-top: 1rem;
+  max-width: 720px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-subtext span {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.about-cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+}
+
+.about-card {
+  padding: 2.8rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(14px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+.about-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  color: #93c5fd;
+}
+
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.glow {
+  box-shadow: 0 0 35px rgba(167,139,250,0.35);
+}
+

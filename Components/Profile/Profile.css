@@ -1,0 +1,168 @@
+.profile_img_slideshow{
+    height:400px;
+    margin-top:40px;
+    /* position: absolute;
+    right: 10px;
+    width: auto;
+    margin-left: 100px; */
+    /* border-radius: 50px; */
+}
+
+.profile h1{
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.profile h1 span{
+    background: linear-gradient(270deg,#af8bec 0.36%, #569ffe 102.6%);
+    background-clip: text;
+    font-family: Georgia, 'serif';
+    /*  */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* this fills the linear background color as done in Navbar.css with connect with me but removes background filling */
+}
+
+.profile p{
+    width : 50%;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.connect{
+  text-decoration: none;
+  color: inherit;
+    padding: 25px 45px;
+    /* top left right bottom*/
+    border-radius: 50px;
+    cursor:pointer;
+    background: linear-gradient(270deg, #af8bec 0.36%, #569ffe 102.6%);
+    transition: 0.6s;
+}
+
+.connect:hover{
+    transform: scale(0.8);
+}
+
+.resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 3px solid white;
+    /* border shorthand : width style color */
+    cursor: pointer;
+    transition: 0.5s;
+    /* when mouse pointer reaches this div, its appearance changes to hand */
+}
+
+.resume-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* we want when pointer is hovering over resume div, so its border color changes to something else */
+/* that is we want something to happen when "hover" action is happening on div with class=resume */
+
+.resume:hover{
+    border: 4px double rgb(197, 85, 197);
+    transform: scale(0.8);
+    /* transformation happens abruptly if transition is not added */
+    /* add transition time to make transformation smooth */
+}
+
+.poem {
+  /* width: 25%; */
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center; */
+  
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+.poem-right {
+  position: absolute;
+  animation: glowFade 4s ease-in-out infinite alternate;
+  right:0px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 80px;
+  /* left:20px; */
+  /* border-right: 2px solid #9b59b6; */
+  /* padding-right: 15px; */
+  color: #aeabed;
+  text-shadow: 0 0 15px  #D8B9FF;
+  right: 40px;
+}
+
+.poem-left {
+    line-height: 80px;
+  /* text-align: left; */
+  position: absolute;
+  font-size: 20px;
+  left:40px;
+  animation: glowFade 4s ease-in-out infinite alternate;
+  /* border-left: 2px solid #e67e22; */
+  padding-left: 15px;
+  color: #68ddf7;
+  text-shadow: 0 0 15px #7FFFD4;
+}
+
+/* Individual poem lines animations */
+.poem-line {
+  margin: 6px 0;
+  font-family: 'Georgia', 'serif';
+  position: relative;
+  animation: floatUp 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.3s);
+  cursor: default;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.poem-line:hover {
+  color: #f1c40f;
+  transform: scale(1.1) translateY(-5px);
+  text-shadow: 0 0 12px #f1c40f;
+  font-weight: 700;
+}
+
+/* Glow pulse animation for poem containers */
+/* @keyframes glowFade {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(246, 185, 234, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 0px #FFD700);
+  }
+} */
+
+/* Floating effect for lines */
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
