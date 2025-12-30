@@ -11,15 +11,9 @@ body {
     radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
     radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0));
   background-repeat: repeat;
-  background-size: 200px 200px;
-  animation: stars 10s ease-in-out infinite alternate;
+  background-size: 200px 200px; 
   color: whitesmoke;
   font-family: 'Outfit';
-}
-
-@keyframes stars {
-  from { opacity: 0.5; }
-  to { opacity: 1; }
 }
 
 html{
