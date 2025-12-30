@@ -44,7 +44,7 @@ const About = () => {
   }, [charIndex, deleting, roleIndex]);
 
   return (
-    <section className="about" id="about">
+    <section className="about" id="ABOUT">
       <h2 className="about-title">About Me</h2>
 
       <div className="typewriter">

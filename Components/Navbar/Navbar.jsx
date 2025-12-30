@@ -19,5 +19,5 @@ const Navbar = () => {
     </div>
   )
 }
-
+// #id in href --> take to element on same page whose ID is id
 export default Navbar
