@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='navbar' id="HOME">
         {/* <img src={logo} alt="" /> */}
         <ul className="nav-menu">
-            <a className="anchor" offset={50} href="#HOME"><li onClick={()=>{setMenu("home")}} style={menu=="home"?{borderBottom: "2px solid #84bdcf", transition: "0.5s", transform:"scale(1.15)"}:{}}>Home</li></a>
+            <a className="anchor" offset={50} href="#PROFILE"><li onClick={()=>{setMenu("home")}} style={menu=="home"?{borderBottom: "2px solid #84bdcf", transition: "0.5s", transform:"scale(1.15)"}:{}}>Home</li></a>
             <a className="anchor" offset={50} href="#ABOUT"><li onClick={()=>{setMenu("about-me")}} style={menu=="about-me"?{borderBottom: "2px solid #84bdcf", transition: "0.5s", transform:"scale(1.15)"}:{}}>About Me</li></a>
             <a className="anchor" offset={50} href="#PROJECT"><li onClick={()=>{setMenu("projects")}}  style={menu=="projects"?{borderBottom: "2px solid #84bdcf", transition: "0.5s", transform:"scale(1.15)"}:{}}>Projects</li></a>
             {/* <a className="anchor" offset={50} href="#ACHIEVEMENT"><li onClick={()=>{setMenu("achievements")}} style={menu=="achievements"?{borderBottom: "2px solid #84bdcf", transition: "0.5s", transform:"scale(1.15)"}:{}}>Achivements</li></a> */}

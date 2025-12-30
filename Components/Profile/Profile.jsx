@@ -27,7 +27,7 @@ const poem_right = [
 ]
 const Profile = () => {
   return (
-    <div className='profile'>
+    <div className='profile' id='PROFILE'>
         <div className="poem-left">
         {
           poem_left.map((line,idx)=>(
